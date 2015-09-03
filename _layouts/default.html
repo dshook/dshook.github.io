@@ -1,20 +1,34 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html>
+  <div id="preloader"><img src="images/logo.png" alt="" /><div class="heartbeat"></div></div>
 
   {% include head.html %}
 
   <body>
+    <!-- BEGIN WRAPPER -->
+    <div id="wrapper">
 
-    {% include header.html %}
+      {% include header.html %}
+      {% include home.html %}
+      {% include ourstory.html %}
+      {% include quotes.html %}
+      {% include wedding.html %}
+      {% include location.html %}
+      {% include gifts.html %}
+      {% include gallery.html %}
+      {% include rsvp.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
+
+      {% include footer.html %}
+
     </div>
+    <!-- END WRAPPER -->
 
-    {% include footer.html %}
-
+    {% include scripts.html %}
   </body>
-
 </html>
