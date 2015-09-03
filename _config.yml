@@ -1,0 +1,11 @@
+# Site settings
+title: Dillon and Chelsea
+email: dshook@alumni.nmt.edu
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dillonandchelsea.com" # the base hostname & protocol for your site
+twitter_username: dshook
+github_username:  dshook
+
+# Build settings
+markdown: kramdown
