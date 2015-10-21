@@ -8,9 +8,10 @@ $(function($){
 		// Components							
 		slide_links			:	'false',
 		slides 				:  	[			// Slideshow Images
-										{image : 'http://placehold.it/1920x1080'},
-										{image : 'http://placehold.it/1920x1080'},  
-										{image : 'http://placehold.it/1920x1080'}
+										{image : 'http://res.cloudinary.com/dillonshook/image/upload/c_scale,q_90,w_1331/v1445388215/169_Gottschalk_Shook_xkvjpa.jpg'},
+										{image : 'http://res.cloudinary.com/dillonshook/image/upload/v1445388215/barrels_np2eid.jpg'},
+										{image : 'http://res.cloudinary.com/dillonshook/image/upload/c_scale,q_89,w_1331/v1445388217/126_Gottschalk_Shook_f3jnry.jpg'},
+										{image : 'http://res.cloudinary.com/dillonshook/image/upload/v1445388215/vineyard_zwntkd.jpg'}
 								]
 	});
 });

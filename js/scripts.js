@@ -98,16 +98,6 @@ var Lilac;
                 $tis.googleMap();
 
                 /**
-                 * Get latest tweets
-                 */
-                $tis.getLatestTweets();
-
-                /**
-                 * Get Instagram feed
-                 */
-                $tis.getInstagram();
-
-                /**
                  * Create PrettyPhoto links
                  */
                 $tis.createPrettyPhoto();
@@ -554,44 +544,6 @@ var Lilac;
                 });
 
                 $("#twitter-box").remove();
-            },
-
-            getInstagram: function () {
-
-                var $tis = this;
-
-                $('.instagram').html('<div class="heartbeat"></div>');
-
-                $.ajax({
-                    type: 'post',
-                    url: 'instagram/instagram.php',
-                    contentType: 'application/json',
-                    dataType: 'json',
-                    success: function (json) {
-                        var feed = $.parseJSON(json),
-                            len = $(".instagram").length,
-                            index = 0,
-                            feedLen = 0,
-                            i = 0;
-
-                        if (feed !== '' && feed.hasOwnProperty("data")) {
-                            feedLen = feed.data.length;
-                        }
-
-                        while (i < feedLen) {
-                            if (index < len) {
-                                $(".instagram").eq(index).html('<img src="' + feed.data[i].images.standard_resolution.url + '" alt="" /><span><a href="' + feed.data[i].images.standard_resolution.url + '" data-gal="prettyPhoto[gallery]" title="' + feed.data[i].caption.text + '"><i class="fa fa-link"></i></a><a href="' + feed.data[i].link + '" target="_blank" title="View on Instagram"><i class="fa fa-external-link"></i></a></span>');
-                                index += 1;
-                            }
-                            i += 1;
-                        }
-
-                        $tis.createPrettyPhoto();
-                    },
-                    error: function () {
-                        console.log("Error getting Instagram feed");
-                    }
-                });
             },
 
             createPrettyPhoto: function () {
