@@ -21,18 +21,33 @@ var map_markers = [
 	// 	"icon":"fa-bed", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
 	// 	"infoWindow":"Accommodation 3 <br> Seal Beach, CA 90740"
 	// },
-	// {
-	// 	"title": "Transportation",
-	// 	"latitude":33.782930,
-	// 	"longitude":-118.060552,
-	// 	"icon":"fa-plane", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-	// 	"infoWindow":"Seal Beach VORTAC SLI <br> Los Alamitos, CA 90720"
-	// },
+	{
+		"title": "Philadelphia International Airport",
+		"latitude":39.8729879,
+		"longitude":-75.2469934,
+		"icon":"fa-plane", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+		"infoWindow":"Philadelphia International Airport"
+	},
 	{
 		"title": "Ceremony and Reception",
 		"latitude":40.2855263,
 		"longitude":-74.8904618,
 		"icon":"fa-bell-o", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
 		"infoWindow":"Crossings Vineyard"
+	},
+	{
+		"title": "Home Wood Suites",
+		"latitude":40.2248648,
+		"longitude":-74.9151677,
+		"icon":"fa-bed",
+		"infoWindow":"<a href='http://homewoodsuites.hilton.com/en/hw/groups/personalized/A/AVPNWHW-835-20160625/index.jhtml?WT.mc_id=POG'>Home Wood Suites</a>"
+	},
+	{
+		"title": "Hampton Inn Suites",
+		"latitude":40.2329958,
+		"longitude":-74.8839994,
+		"icon":"fa-bed",
+		"infoWindow":"<a href='http://hamptoninn.hilton.com/en/hp/groups/personalized/A/AVPNTHX-GSW-20160624/index.jhtml?WT.mc_id=POG'>Hampton Inn Suites</a>"
 	}
+
 ];
