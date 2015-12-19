@@ -153,6 +153,13 @@ a:hover,
 a:focus {
   color: #fc7770;
 }
+.bg-color a{
+  color: white;
+  text-decoration: underline;;
+}
+.bg-color a:hover{
+  color: #adb1b5;
+}
 img {
   max-width: 100%;
 }
