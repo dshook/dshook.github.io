@@ -1952,6 +1952,10 @@ fieldset[disabled] .btn.ribbon.active {
   color: #fff;
   font-family: 'Dancing Script', cursive;
 }
+#ourstory .section-desc{
+  max-width: 750px;
+  margin: 0 auto;
+}
 /* #Timeline
 ================================================== */
 .timeline {
