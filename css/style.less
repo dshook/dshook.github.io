@@ -2773,16 +2773,7 @@ fieldset[disabled] .btn.ribbon.active {
 			left:0;
 			width:100%;
 			height:100%;
-			background-color:fade(#fff, 90%);
 			z-index:1;
-			border:0px solid transparent;
-			-webkit-box-shadow:inset 0px 0px 0px 2px fade(#fff, 0%);
-			   -moz-box-shadow:inset 0px 0px 0px 2px fade(#fff, 0%);
-					box-shadow:inset 0px 0px 0px 2px fade(#fff, 0%);
-			.transition(all 0.3s ease-out);
-		}
-
-		&:hover::before{
 			background-color:fadeout(@color, 10%);
 			border:15px solid transparent;
 			-webkit-box-shadow:inset 0px 0px 0px 2px fade(#fff, 50%);
@@ -2790,28 +2781,22 @@ fieldset[disabled] .btn.ribbon.active {
 					box-shadow:inset 0px 0px 0px 2px fade(#fff, 50%);
 		}
 
+
 		>i{
 			position:relative;
 			font-size:44pt;
-			margin-top:120px;
 			margin-bottom:5px;
+			color:#fff;
+			margin-top:20px;
 			z-index:2;
 			.transition(all 0.3s ease-out);
-		}
-
-		&:hover >i{
-			color:#fff;
-			margin-top:50px;
 		}
 
 		h3{
 			position:relative;
 			z-index:2;
-			.transition(all 0.3s ease-out);
-		}
-
-		&:hover h3{
 			color:#fff;
+			.transition(all 0.3s ease-out);
 		}
 
 		.info{
@@ -2824,6 +2809,7 @@ fieldset[disabled] .btn.ribbon.active {
 			img{
 				background:rgba(255,255,255, 0.15);
 				margin:5px auto;
+				margin-bottom: 10px;
 				padding:10px 10px;
 			}
 
@@ -2832,13 +2818,11 @@ fieldset[disabled] .btn.ribbon.active {
 			}
 		}
 
-		&:hover{
-			border:2px solid rgba(255,255,255,.5);
+		border:2px solid rgba(255,255,255,.5);
 
-			.info{
-				.opacity(1);
-				margin-top:20px;
-			}
+		.info{
+			.opacity(1);
+			margin-top:20px;
 		}
 	}
 
