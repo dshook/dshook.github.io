@@ -6,16 +6,10 @@
 						<h1 class="section-title">RSVP</h1>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-sm-8 center">
-						<div class="form-wrap">
-							<section class="highlighted">
-								<h3><i class="icon icon-arrow-right"></i>Open following invitations<i class="icon icon-arrow-left"></i></h3>
-							</section>
-						</div>
-
-<!-- 						<form id="form-rsvp" method="post" action="#">
+ 						<form id="form-rsvp" method="post" action="#">
 							<div class="form-wrap">
 								<section class="highlighted">
 									<h3><i class="icon icon-arrow-right"></i>Will you be attending the wedding?<i class="icon icon-arrow-left"></i></h3>
@@ -30,9 +24,9 @@
 										<input type="email" name="Email" placeholder="YOUR EMAIL*" class="form-control required fromEmail"  />
 									</div>
 								</section>
-								
+
 								<section>
-									<h3><i class="icon icon-arrow-right"></i>Who else is comming with you?<i class="icon icon-arrow-left"></i></h3>
+									<h3><i class="icon icon-arrow-right"></i>Who else is coming with you?<i class="icon icon-arrow-left"></i></h3>
 									<div class="col-md-8">
 										<input type="text" name="guest" id="guest" placeholder="GUEST NAME" class="form-control" />
 									</div>
@@ -40,30 +34,67 @@
 										<button id="add_guest" class="btn btn-color add_button" data-input="guest" data-wrapper="guest_list">+ Add Guest</button>
 									</div>
 									<div id="guest_list" class="add_list col-md-12" data-count="2">
-										<div class="input-group">
-											<input type="text" class="form-control" name="guest_1" value="Jessica Johnson" />
+<!-- 									<div class="input-group">
+											<input type="text" class="form-control" name="guest_1" value="jessica johnson" />
 											<span class="input-group-addon"><i class="fa fa-trash"></i></span>
 										</div>
-										<div class="input-group">
-											<input type="text" class="form-control" name="guest_2" value="John Roberts" />
-											<span class="input-group-addon"><i class="fa fa-trash"></i></span>
-										</div>
+-->
 									</div>
 								</section>
-								
+
+								<section>
+									<h3><i class="icon icon-arrow-right"></i>Dinner Options<i class="icon icon-arrow-left"></i></h3>
+									<div data-value="rsvp_dinner" class="radio-lilac col-sm-12">
+										<div class="col-sm-12">
+											<div class="col-sm-9 descrip dinner">
+												Dual-Plated Beef Tenderloin and Pistachio-Encrusted Sea Bass
+											</div>
+											<div class="col-sm-3">
+												<input type="text" name="meat" placeholder="NUMBER*" class="form-control required" />
+											</div>
+										</div>
+
+										<div class="col-sm-12">
+											<div class="col-sm-9 descrip dinner">
+												Vegetarian
+											</div>
+											<div class="col-sm-3">
+												<input type="text" name="vedge" placeholder="NUMBER*" class="form-control required col-sm-6" />
+											</div>
+										</div>
+									</div>
+
+									<h3>Will you use the provided shuttle service?</h3>
+									<div class="descrip shuttle">(Accessible from all reserved blocks of hotel rooms)</div>
+									<div data-value="rsvp_shuttle" class="radio-lilac col-sm-12">
+										<button class="btn btn-default active" data-value="yes">
+											Yes
+										</button>
+										<button class="btn btn-default" data-value="no">
+											No
+										</button>
+									</div>
+
+								</section>
+
 								<section class="highlighted">
 									<div class="col-sm-12">
-										<textarea name="Message" placeholder="LEAVE A NOTE (OPTIONAL)" class="form-control"></textarea> 
+										<textarea name="Message" placeholder="LEAVE A NOTE (OPTIONAL)" class="form-control"></textarea>
 										<div class="form_status_message"></div>
 									</div>
 								</section>
 							</div>
-							
+
 							<div class="center">
-								<button type="submit" class="btn ribbon btn-color submit_form"><span class="line_above"></span><i class="icon icon-arrow-right"></i>Submit<i class="icon icon-arrow-left"></i></button>
+								<button type="submit" class="btn ribbon btn-color submit_form">
+									<span class="line_above"></span>
+									<i class="icon icon-arrow-right"></i>
+									Submit
+									<i class="icon icon-arrow-left"></i>
+								</button>
 							</div>
 						</form>
- -->					</div>
+					</div>
 				</div>
 			</div>
 		</section>

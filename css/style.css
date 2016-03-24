@@ -577,7 +577,6 @@ h2.section-title {
   font-size: 20pt;
   border: 3px solid transparent;
   font-family: 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3798,7 +3797,7 @@ fieldset[disabled] .btn.ribbon.active {
   font-family: 'Dancing Script', cursive;
   font-size: 32pt;
   text-transform: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .form-wrap h3 .icon,
@@ -3833,6 +3832,19 @@ fieldset[disabled] .btn.ribbon.active {
   display: table;
   clear: both;
 }
+
+.form-wrap .descrip{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15pt;
+}
+.form-wrap .dinner{
+  text-align: right;
+  padding: 20px 15px;
+}
+.form-wrap .shuttle{
+  margin-bottom: 25px;
+}
+
 .form-wrap .btn {
   border-width: 2px;
 }
