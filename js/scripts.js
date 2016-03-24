@@ -745,12 +745,17 @@ var Lilac;
                         stopSpin,
                         spinIcon = [];
 
+                    var data = {
+                        _subject: 'New RSVP!',
+                        _cc: 'chelseagotts@gmail.com'
+                    };
+
                     $fields.each(function () {
                         var $field = $(this);
 
                         if ($field.attr('type') === "hidden") {
                             if ($field.hasClass('subject')) {
-                                html += "&subject=" + $field.val();
+                                data.subject = $field.val();
                             } else if ($field.hasClass('fromName') || $field.hasClass('fromname')) {
                                 html += "&fromname=" + $field.val();
                             } else if ($field.hasClass('fromEmail') || $field.hasClass('fromemail')) {
@@ -770,26 +775,20 @@ var Lilac;
                                 if ($field.hasClass('subject')) {
                                     html += "&subject=" + $field.val();
                                     html += "&subject_label=" + $field.attr("name");
-                                } else if ($field.hasClass('fromName') || $field.hasClass('fromname')) {
-                                    html += "&fromname=" + $field.val();
-                                    html += "&fromname_label=" + $field.attr("name");
-                                } else if ($field.hasClass('fromEmail') || $field.hasClass('fromemail')) {
-                                    html += "&fromemail=" + $field.val();
-                                    html += "&fromemail_label=" + $field.attr("name");
                                 } else if ($field.hasClass('radio-lilac')) {
                                     html += "&field" + len + "_label=" + $field.data("value");
                                     html += "&field" + len + "_value=" + $('.active', $field).data("value");
+                                    data[$field.data("value")] = $('.active', $field).data("value");
                                     len += 1;
                                 } else {
                                     html += "&field" + len + "_label=" + $field.attr("name");
                                     html += "&field" + len + "_value=" + $field.val();
+                                    data[$field.attr("name")] = $field.val();
                                     len += 1;
                                 }
                             }
                         }
                     });
-
-                    html += "&len=" + len;
 
                     showError = function () {
                         $submit_btn.width($submit_btn.width());
@@ -856,13 +855,14 @@ var Lilac;
                         $submit_btn.addClass('disabled');
 
                         $.ajax({
-                            type: 'POST',
-                            url: 'contact.php',
-                            data: html,
+                            url: "https://formspree.io/dshook@alumni.nmt.edu",
+                            method: "POST",
+                            data: data,
+                            dataType: "json",
                             success: function (msg) {
                                 stopSpin();
 
-                                if (msg === 'ok') {
+                                if (msg.success) {
                                     showSuccess();
                                     $form[0].reset();
                                 } else {
@@ -871,7 +871,8 @@ var Lilac;
 
                                 $tis.sendingMail = false;
                             },
-                            error: function () {
+                            error: function (error) {
+                                console.log(error);
                                 stopSpin();
 
                                 showError();

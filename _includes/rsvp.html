@@ -9,13 +9,13 @@
 
 				<div class="row">
 					<div class="col-sm-8 center">
- 						<form id="form-rsvp" method="post" action="#">
+ 						<form id="form-rsvp" method="POST" action="#">
 							<div class="form-wrap">
 								<section class="highlighted">
 									<h3><i class="icon icon-arrow-right"></i>Will you be attending the wedding?<i class="icon icon-arrow-left"></i></h3>
 									<div data-value="attending_wedding" class="radio-lilac col-sm-12">
-										<button class="btn btn-default active" data-value="yes"><i class="fa fa-smile-o"></i>Yes</button>
-										<button class="btn btn-default" data-value="no"><i class="fa fa-frown-o"></i>No</button>
+										<button name="rsvp-yes" class="btn btn-default active" data-value="yes"><i class="fa fa-smile-o"></i>Yes</button>
+										<button name="rsvp-no" class="btn btn-default" data-value="no"><i class="fa fa-frown-o"></i>No</button>
 									</div>
 									<div class="col-sm-6">
 										<input type="text" name="Name" placeholder="YOUR NAME*" class="form-control required fromName" />
@@ -44,7 +44,7 @@
 
 								<section>
 									<h3><i class="icon icon-arrow-right"></i>Dinner Options<i class="icon icon-arrow-left"></i></h3>
-									<div data-value="rsvp_dinner" class="radio-lilac col-sm-12">
+									<div class="radio-lilac col-sm-12">
 										<div class="col-sm-12">
 											<div class="col-sm-9 descrip dinner">
 												Dual-Plated Beef Tenderloin and Pistachio-Encrusted Sea Bass
@@ -67,10 +67,10 @@
 									<h3>Will you use the provided shuttle service?</h3>
 									<div class="descrip shuttle">(Accessible from all reserved blocks of hotel rooms)</div>
 									<div data-value="rsvp_shuttle" class="radio-lilac col-sm-12">
-										<button class="btn btn-default active" data-value="yes">
+										<button class="btn btn-default active" data-value="yes" name="shuttle-yes">
 											Yes
 										</button>
-										<button class="btn btn-default" data-value="no">
+										<button class="btn btn-default" data-value="no" name="shuttle-no">
 											No
 										</button>
 									</div>
