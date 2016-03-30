@@ -1980,6 +1980,9 @@ fieldset[disabled] .btn.ribbon.active {
   -o-transition: height 0.3s linear;
   transition: height 0.3s linear;
 }
+.timeline.first::before{
+  height:120%;
+}
 .timeline::after {
   content: "";
   display: table;

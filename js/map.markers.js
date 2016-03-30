@@ -29,13 +29,6 @@ var map_markers = [
 		"infoWindow":"Philadelphia International Airport"
 	},
 	{
-		"title": "Ceremony and Reception",
-		"latitude":40.2855263,
-		"longitude":-74.8904618,
-		"icon":"fa-bell-o", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
-		"infoWindow":"Crossings Vineyard"
-	},
-	{
 		"title": "Home Wood Suites",
 		"latitude":40.2248648,
 		"longitude":-74.9151677,
@@ -48,6 +41,20 @@ var map_markers = [
 		"longitude":-74.8839994,
 		"icon":"fa-bed",
 		"infoWindow":"<a href='http://hamptoninn.hilton.com/en/hp/groups/personalized/A/AVPNTHX-GSW-20160624/index.jhtml?WT.mc_id=POG'>Hampton Inn Suites</a>"
+	},
+	{
+		"title": "Black Horse Tavern",
+		"latitude":40.2277922,
+		"longitude":-74.9369113,
+		"icon":"fa-beer",
+		"infoWindow":"<a href='http://blackhorsetavernnewtown.com/'>Black Horse Tavern</a><br/>June 24th 8pm"
+	},
+	{
+		"title": "Ceremony and Reception",
+		"latitude":40.2855263,
+		"longitude":-74.8904618,
+		"icon":"fa-bell-o", //Check the full list of icons at http://fortawesome.github.io/Font-Awesome/icons/
+		"infoWindow":"Crossings Vineyard<br/>Ceremony & Reception"
 	}
 
 ];
